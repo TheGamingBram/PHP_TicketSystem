@@ -12,13 +12,14 @@
                     <tr>
                         <th>Ticket_ID</th>
                         <th>Ticket Subject</th>
-                        <th>User</th>
                         <th>Date Submitted</th>
+                        <th>User</th>
+                        <th>Reaction count</th>
                         <th>Options</th>
                     </tr>
                 </thead>
                 <tbody>
-                    
+                    <?=$DB_Connection->Generate_Table();?>
                 </tbody>
             </table>
         </div>
@@ -27,7 +28,7 @@
 <script>
     let table = new DataTable('#Ticket_View', {
         bLengthChange: false,
-        order: [[3, 'desc']],
+        order: [[2, 'desc']],
         columnDefs: [
             {
                 target: 0,

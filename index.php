@@ -1,7 +1,7 @@
 <?php
-    require("./Assets/Functions/Functions.php");
-    $DB_Connection = new DB_Connection;
-    $ErrorGen = CheckError($DB_Connection);
+    require("./Assets/Functions/Overview_functions.php");
+    $DB_Connection = new Overview;
+    $ErrorGen = $DB_Connection->CheckError();
     require("./Assets/HTML/Header.php");
 ?>
 <html lang="en">

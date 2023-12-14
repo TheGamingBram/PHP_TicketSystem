@@ -22,6 +22,7 @@
                     $Generated_Data .= "<td>" . $TicketData['Ticket_Subject'] . "</td>";
                     $Generated_Data .= "<td data-order='".strtotime($TicketData['Ticket_DateTime'])."'>" . date("G:i - d/m/Y", strtotime($TicketData['Ticket_DateTime'])) . "</td>";
                     $Generated_Data .= "<td>" . "<a href='mailto: ".$TicketData['User_Email']."'>".$TicketData['User_Name']."</a>" . "</td>";
+                    $Generated_Data .= "<td>" . $TicketData['Ticket_Priority']. "</td>";
                     $Generated_Data .= "<td>" . $GetData_ReactionCount_Count . " Reaction" . "</td>";
                     $Generated_Data .= "<td>" . "<a href='ticket_view.php?ticket_id=".$TicketData['Ticket_Id']."'><button type='button' class='btn btn-primary'>View ticket</button></a>" . "</td>";
                 $Generated_Data .= "</tr>";

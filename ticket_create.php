@@ -5,20 +5,17 @@
     require("./Assets/HTML/Header.php");
 
     $Ticket_Subject = $Ticket_Priority = $Ticket_Message = $Ticket_Attachments = $User_Name = $User_Email = "";
+    $TICKET_SUCCESS = false;
     if(!empty($_POST)){
-        $DB_Connection->prettyprint($_POST);
         $Ticket_Subject = trim($_POST['T_Subject']);
         $Ticket_Priority = trim($_POST['T_Priority']);
         $Ticket_Message = trim($_POST['T_Message']);
-        $Ticket_Attachments = $_POST['T_files'];
+        $Ticket_Attachments = $_FILES['T_files'];
         $User_Name = trim($_POST['User_name']);
         $User_Email = trim($_POST['User_email']);
         if($DB_Connection->CreateTicket($Ticket_Subject, $Ticket_Priority, $Ticket_Message, $Ticket_Attachments, $User_Name, $User_Email) == true){
-
-        }else{
-            echo "error";
+            $TICKET_SUCCESS = True;
         }
-        
     }
 ?>
 <html lang="en">
@@ -29,7 +26,11 @@
             <div class="alert alert-warning" role="alert">
                 The fields with the * icon are required to fill in!
             </div>
-            <form method="post">
+            <?php
+            echo $DB_Connection->ErrorMSG();
+            if($TICKET_SUCCESS == True){ echo $DB_Connection->SuccessMSG(); }
+            ?>
+            <form method="post" enctype="multipart/form-data">
                 <h2>User Info</h2>
                 <div class="row">
                     <div class="col-md">

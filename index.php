@@ -14,6 +14,7 @@
                         <th>Ticket Subject</th>
                         <th>Date Submitted</th>
                         <th>User</th>
+                        <th>Priority</th>
                         <th>Reaction count</th>
                         <th>Options</th>
                     </tr>

@@ -17,3 +17,10 @@ This system is made as an assessment for DigiFactory.
 - 12:45 - Finished styling 'ticket_create.php'
 - 13:00 - Start create command
 - 13:30 - Debug "index" overview table
+### 14/12/2023 - 12:35 till 14:30
+- 12:35 - Started Working on Create Ticket (value validations)
+- 12:50 - Finished value validation
+- 13:30 - Finished Insert query's
+- 13:50 - Debug some code
+- 14:00 - Start working on upload files script
+- 14:30 - finished create ticket script.

@@ -6,7 +6,7 @@
 
     $Ticket_Subject = $Ticket_Priority = $Ticket_Message = $Ticket_Attachments = $User_Name = $User_Email = "";
     $TICKET_SUCCESS = false;
-    if(!empty($_POST)){
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
         $Ticket_Subject = trim($_POST['T_Subject']);
         $Ticket_Priority = trim($_POST['T_Priority']);
         $Ticket_Message = trim($_POST['T_Message']);
@@ -15,6 +15,7 @@
         $User_Email = trim($_POST['User_email']);
         if($DB_Connection->CreateTicket($Ticket_Subject, $Ticket_Priority, $Ticket_Message, $Ticket_Attachments, $User_Name, $User_Email) == true){
             $TICKET_SUCCESS = True;
+            unset($_POST);
         }
     }
 ?>

@@ -3,7 +3,16 @@
 This system is made as an assessment for DigiFactory.
 
 ## Installation
--
+### Info about project
+This project is made using Visual Studio and Wamp.
+### Step 1 - Setup of database
+1 - Open phpMyAdmin.
+2 - Create a new database named "php_ticketsystem".
+3 - Go to the import tab.
+4 - Choose the "php_ticketsystem.sql" and choose Import.
+### Step 2 - Changing sql user account
+1 - in the "PHP_TicketSystem" folder go to "Assets/Functions/Functions.php".
+2 - Change the "$DatabaseUsername" and the "$DatabasePassword" to the correct username and password.
 
 ## Time indication
 ### 12/12/2023 - 10:30 till 15:15
@@ -24,3 +33,14 @@ This system is made as an assessment for DigiFactory.
 - 13:50 - Debug some code
 - 14:00 - Start working on upload files script
 - 14:30 - finished create ticket script.
+### 15/12/2023 - 11:30 till 12:30
+- 11:30 - Start working on ticket View
+- 12:30 - Finished Styling ticket page
+### 18/12/2023 - 11:15 till
+- 11:15 - Ticket view data view
+- 12:00 - Start Reaction system
+- 13:00 - Start Reaction Attachments upload system
+- 13:40 - Start Reaction Display system
+- 14:40 - Finished Code, start Debug and Temp data Generation
+- 15:00 - Finished generating temp data, Creating Installation guide
+- 15:10 - Finished guides

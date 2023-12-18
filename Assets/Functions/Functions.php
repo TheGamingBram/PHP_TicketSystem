@@ -8,8 +8,8 @@
 
         public function __construct(){
             $DatabaseHost = "localhost";
-            $DatabaseUsername = "root";
-            $DatabasePassword = "";
+            $DatabaseUsername = "root"; // CHANGE THIS TO A DIFFERENT USERNAME!
+            $DatabasePassword = ""; // CHANGE THIS TO A DIFFERENT PASSWORD!
             $DatabaseName = "php_ticketsystem";
 
             try {

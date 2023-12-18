@@ -36,7 +36,7 @@ This project is made using Visual Studio and Wamp.
 ### 15/12/2023 - 11:30 till 12:30
 - 11:30 - Start working on ticket View
 - 12:30 - Finished Styling ticket page
-### 18/12/2023 - 11:15 till
+### 18/12/2023 - 11:15 till 15:10
 - 11:15 - Ticket view data view
 - 12:00 - Start Reaction system
 - 13:00 - Start Reaction Attachments upload system

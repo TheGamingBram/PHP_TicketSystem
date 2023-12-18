@@ -6,13 +6,13 @@ This system is made as an assessment for DigiFactory.
 ### Info about project
 This project is made using Visual Studio and Wamp.
 ### Step 1 - Setup of database
-1 - Open phpMyAdmin.
-2 - Create a new database named "php_ticketsystem".
-3 - Go to the import tab.
-4 - Choose the "php_ticketsystem.sql" and choose Import.
+- Open phpMyAdmin.
+- Create a new database named "php_ticketsystem".
+- Go to the import tab.
+- Choose the "php_ticketsystem.sql" and choose Import.
 ### Step 2 - Changing sql user account
-1 - in the "PHP_TicketSystem" folder go to "Assets/Functions/Functions.php".
-2 - Change the "$DatabaseUsername" and the "$DatabasePassword" to the correct username and password.
+- in the "PHP_TicketSystem" folder go to "Assets/Functions/Functions.php".
+- Change the "$DatabaseUsername" and the "$DatabasePassword" to the correct username and password.
 
 ## Time indication
 ### 12/12/2023 - 10:30 till 15:15
